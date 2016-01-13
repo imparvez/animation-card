@@ -1,0 +1,90 @@
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+
+body {
+  background-color: #50423F;
+}
+
+.container{ 
+    -webkit-border-radius: 5em;
+    border: 5px solid red;
+    top: 60px;
+    left: 30px;
+    width:100px;
+    height: 100px;
+    z-index: 4;
+    background-color: #fbac13;
+    position: relative;
+    display: inline-block;
+}
+
+
+.rays {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #fbac13;
+}
+
+.rays-one {
+  top: -22px;
+  left: 41px;
+  transform: rotate(45deg);
+}
+
+.rays-two {
+  bottom: 47px;
+  left: -21px;
+  transform: rotate(45deg);
+}
+
+.rays-three {
+  left: -3px;
+  top: 1px;
+  transform: rotate(90deg);
+}
+
+.rays-four {
+  left: -3px;
+  bottom: 1px;
+  transform: rotate(90deg);
+}
+
+.rays-nine {
+  right: -3px;
+  bottom: 1px;
+  transform: rotate(90deg);
+}
+
+.rays-ten {
+  right: -3px;
+  top: 1px;
+  transform: rotate(90deg);
+}
+
+.rays-eleven {
+  bottom: 47px;
+  right: -21px;
+  transform: rotate(45deg);
+}
+
+.rays-twelve {
+  bottom: -22px;
+  left: 41px;
+  transform: rotate(45deg);
+}
+
+@-webkit-keyframes circle-run 
+{
+    0%{
+        -webkit-transform:rotate(0deg);
+    }
+    100% 
+    {
+        -webkit-transform:rotate(360deg);
+    }
+}
+
+.hilbilly {
+    -webkit-animation: circle-run 2s infinite;
+    -webkit-animation-timing-function:linear;
+}
